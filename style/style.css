@@ -15,7 +15,6 @@ header{
 }
 #purple{
     border: 2px solid rgb(134, 85, 134);
-   
 }
 nav{
 display: flex;
@@ -29,7 +28,6 @@ gap: 5px;
     text-align: center;
     
 }
-
  
 #sobre{
     margin: auto;
@@ -42,14 +40,10 @@ gap: 5px;
 }
 
 #square::after{
-    content: url('./capa.png');
+    content: url('/images/capa.png');
     margin-left: 50px;
     
 }
-
-
-
-
 
 h2{
     text-align: justify;
@@ -60,9 +54,44 @@ h2{
 
 }
 
+#About{
+    width: 900px;
+    margin: auto;
+}
+#About p{
+    margin: 10px 0;
+    padding: 0;
+}
+
+#About h2{
+margin-bottom: 20px;    
+}
+
+ol{
+    text-align: start;
+}
+li{
+margin: 0 50px;
+}
+
+hr{
+    margin: 20px;
+}
 
 
 
+#form{
+width: 900px;
+margin: auto;
+}
+
+form{
+text-align: start;
+margin: 5px;
+}
+textarea{
+    display: block;
+}
 footer{
     margin-top: 100px;
     text-align: center;
