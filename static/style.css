@@ -40,7 +40,7 @@ gap: 5px;
 }
 
 #square::after{
-    content: url('/images/capa.png');
+    content: url('capa.png');
     margin-left: 50px;
     
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    {% block head %}
+
+    <div id="app">
+      <hr id="purple" />
+      <header>
+        <img src="{{url_for('static', filename='logo.png')}}" alt=".logo" />
+        <nav>
+          <a href="/">Home |</a>
+          <a href="{{url_for('sobre')}}"> Quem somos |</a>
+          <a href="{{url_for('contato')}}"> Contato</a>
+        </nav>
+      </header>
+
+      {% endblock %}
+
+    </div>
+  </body>
+</html>
+
+
+
+<footer>
+  <strong> Todos os direitos reservados</strong>
+</footer>
+</body>
+</html>
