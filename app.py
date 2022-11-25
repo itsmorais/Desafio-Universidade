@@ -1,18 +1,15 @@
-from flask import Flask,render_template
-
+from flask import Flask
+from dbConnect import db_connect
+from createDB import Create
+from rotas import first_route,second_route,third_route
 app = Flask(__name__)
 
+conn,cur = db_connect()
 
-@app.route('/')
-def home():
-  return render_template('index.html')
+app.register_blueprint(first_route,url_prefix='/')
+app.register_blueprint(second_route,url_prefix='/sobre')
+app.register_blueprint(third_route,url_prefix='/contato')
 
-@app.route('/sobre')
-def sobre():
-  return render_template('sobre.html')
 
-@app.route('/contato')
-def contato():
-  return render_template('contato.html')
 
 app.run(debug=True)

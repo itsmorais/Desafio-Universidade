@@ -11,17 +11,24 @@
         </p>
         <hr />
 
-        <form>
+        <form method="post" onsubmit="status()">
           Seu e-mail: <br />
-          <input type="mail" />
+          <input type="mail" name="email" required/>
           <br />
           Assunto: <br />
-          <input type="text" />
+          <input type="text" name="assunto" required/>
           <br />
           Descrição: <br />
-          <textarea name="text-area" id="text" cols="30" rows="3"></textarea>
-          <button type="submit">Enviar</button>
+          <textarea name="descricao" id="text" cols="30" rows="3" required></textarea>
+         <input type="submit">
+        
         </form>
+       
       </div>
     </div>
+    <script>
+      function status(){
+        alert('Mensagem enviada com sucesso!')
+      }
+     </script>
     {% endblock %}
